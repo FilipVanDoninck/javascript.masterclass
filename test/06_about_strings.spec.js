@@ -43,7 +43,7 @@ describe('About Strings (topics/06_about_strings.js)', function() {
   it('slice', function() {
     const fruit = 'apple pie';
     assert.equal(
-      __,
+      'apple',
       fruit.slice(0, 5),
       'what is the value of fruit.slice(0,5)?'
     );
