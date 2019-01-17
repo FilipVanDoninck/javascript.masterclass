@@ -1,51 +1,51 @@
-const assert = require("assert");
+const assert = require('assert');
 
-describe.skip("About Strings (topics/06_about_strings.js)", function() {
-  it("delimiters", function() {
-    const singleQuotedString = "apple";
-    const doubleQuotedString = "apple";
+describe('About Strings (topics/06_about_strings.js)', function() {
+  it('delimiters', function() {
+    const singleQuotedString = 'apple';
+    const doubleQuotedString = 'apple';
     assert.equal(
-      __,
+      true,
       singleQuotedString === doubleQuotedString,
-      "are the two strings equal?"
+      'are the two strings equal?'
     );
   });
 
-  it("concatenation", function() {
-    const fruit = "apple";
-    const dish = "pie";
+  it('concatenation', function() {
+    const fruit = 'apple';
+    const dish = 'pie';
     assert.equal(
-      __,
-      fruit + " " + dish,
+      'apple pie',
+      fruit + ' ' + dish,
       'what is the value of fruit + " " + dish?'
     );
   });
 
-  it("character Type", function() {
-    const characterType = typeof "Amory".charAt(1); // typeof will be explained in about reflection
-    assert.equal(__, characterType, "Javascript has no character type");
+  it('character Type', function() {
+    const characterType = typeof 'Amory'.charAt(1); // typeof will be explained in about reflection
+    assert.equal('string', characterType, 'Javascript has no character type');
   });
 
-  it("escape character", function() {
-    const stringWithAnEscapedCharacter = "\u0041pple";
+  it('escape character', function() {
+    const stringWithAnEscapedCharacter = '\u0041pple';
     assert.equal(
-      __,
+      'Apple',
       stringWithAnEscapedCharacter,
-      "what  is the value of stringWithAnEscapedCharacter?"
+      'what  is the value of stringWithAnEscapedCharacter?'
     );
   });
 
-  it("string.length", function() {
-    const fruit = "apple";
-    assert.equal(__, fruit.length, "what is the value of fruit.length?");
+  it('string.length', function() {
+    const fruit = 'apple';
+    assert.equal(5, fruit.length, 'what is the value of fruit.length?');
   });
 
-  it("slice", function() {
-    const fruit = "apple pie";
+  it('slice', function() {
+    const fruit = 'apple pie';
     assert.equal(
       __,
       fruit.slice(0, 5),
-      "what is the value of fruit.slice(0,5)?"
+      'what is the value of fruit.slice(0,5)?'
     );
   });
 });

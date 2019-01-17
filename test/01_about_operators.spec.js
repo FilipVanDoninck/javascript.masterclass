@@ -7,7 +7,7 @@ describe('About Operators (topics/01_about_operators.js)', function() {
     for (let i = 0; i <= 5; i++) {
       result = result + i;
     }
-    assert.equal(__, result, 'What is the value of result?');
+    assert.equal(15, result, 'What is the value of result?');
   });
 
   it('assignment addition', function() {
@@ -16,7 +16,7 @@ describe('About Operators (topics/01_about_operators.js)', function() {
       //the code below is just like saying result = result + i; but is more concise
       result += i;
     }
-    assert.equal(__, result, 'What is the value of result?');
+    assert.equal(15, result, 'What is the value of result?');
   });
 
   it('subtraction', function() {
@@ -24,7 +24,7 @@ describe('About Operators (topics/01_about_operators.js)', function() {
     for (let i = 0; i <= 2; i++) {
       result = result - i;
     }
-    assert.equal(__, result, 'What is the value of result?');
+    assert.equal(2, result, 'What is the value of result?');
   });
 
   it('assignment subtraction', function() {
@@ -32,7 +32,7 @@ describe('About Operators (topics/01_about_operators.js)', function() {
     for (let i = 0; i <= 2; i++) {
       result -= i;
     }
-    assert.equal(__, result, 'What is the value of result?');
+    assert.equal(2, result, 'What is the value of result?');
   });
 
   //Assignment operators are available for multiplication and division as well
@@ -42,6 +42,9 @@ describe('About Operators (topics/01_about_operators.js)', function() {
     let x = 5;
     //again this is exactly the same as result = result % x
     result %= x;
-    assert.equal(__, result, 'What is the value of result?');
+    assert.equal(0, result, 'What is the value of result?');
+
+    if ((result %= x)) {
+    }
   });
 });

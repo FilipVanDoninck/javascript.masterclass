@@ -4,7 +4,7 @@ import * as _ from '../src';
 
 chai.should();
 
-describe.only('Lodash library', () => {
+describe('Lodash library', () => {
   describe('identity', () => {
     it('Should return the same value that has been passed', () => {
       expect(_.identity(1)).equal(1);
